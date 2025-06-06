@@ -23,6 +23,11 @@ pipeline {
             steps {
                 sh './jenkins/scripts/deliver.sh' 
             }
+        },
+            stage('result') { 
+            steps {
+                echo "yay, this is comepeted
+            }
         }
     }
 }
