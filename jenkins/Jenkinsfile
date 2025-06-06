@@ -23,11 +23,13 @@ pipeline {
             steps {
                 sh './jenkins/scripts/deliver.sh' 
             }
-        },
-            stage('result') { 
+        }
+        stage ('last step') {
             steps {
-                echo "yay, this is comepeted
+                echo 'This is final bosss'
             }
         }
+    
+        
     }
 }
